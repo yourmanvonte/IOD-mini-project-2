@@ -9,7 +9,7 @@ const SavedQuotes = () => {
         setSavedQuotes(quotes);
     }, []);
 
-    const removeQuote = () => {
+    const removeQuote = (indexToRemove) => {
       const updatedQuotes = savedQuotes.filter((_, idx) => idx !== indexToRemove);
       localStorage.setItem('savedQuotes', JSON.stringify(updatedQuotes));
       setSavedQuotes(updatedQuotes);

@@ -20,7 +20,7 @@ const QuoteDisplay = ({ quoteData, onLike, onGenerate, showQuote }) => {
           <p>- {author}</p>
           <p dangerouslySetInnerHTML={{ __html: history }}></p>
 
-          <button onClick={() => {
+          <button className="like-button" onClick={() => {
             onLike(quoteData);
           }}>
             🖤
