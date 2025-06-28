@@ -34,8 +34,8 @@ const QuoteDisplay = ({ quoteData, onLike, onGenerate, showQuote }) => {
 
       {showQuote && (
         <div id="quote-container">
-          <p>
-            <strong>"{quote}"</strong>
+          <p className="custom-bold">
+            "{quote}"
           </p>
           <p>- {author}</p>
           <p dangerouslySetInnerHTML={{ __html: history }}></p>

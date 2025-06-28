@@ -262,6 +262,11 @@ body::before {
   margin-bottom: 0;
 }
 
+.custom-bold {
+  font-weight: bold !important;
+  font-family: Arial, sans-serif !important; /* Optional, ensures font supports bold */
+}
+
 @media (max-width: 768px) {
     body {
         width: 100%;

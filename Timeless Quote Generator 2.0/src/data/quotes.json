@@ -53,5 +53,102 @@
                 "Anger, if not restrained, is frequently more hurtful to us than the injury that provokes it.",
                 "No man was ever wise by chance."
             ]
+    },
+    {
+        "author": "Maya Angelou",
+        "image": "https://boostcafe.org/wp-content/uploads/2014/06/maya_angelou.jpg",
+        "history": [
+            "<a href=\"https://en.wikipedia.org/wiki/Maya_Angelou\" target=\"blank\">Maya Angelou</a> (1928–2014) was a celebrated American poet, memoirist, performer, and civil rights activist whose powerful voice emerged from a childhood marked by trauma, racism, and silence. Born in St. Louis, Missouri, and raised in segregated Arkansas, she rose to global prominence with her 1969 memoir I Know Why the Caged Bird Sings, one of the first widely-read autobiographies by a Black woman. Her multifaceted life included work as a dancer, singer, actress, educator, and speaker, as well as collaboration with civil rights leaders like Martin Luther King Jr. and Malcolm X. Angelou’s philosophy centered on resilience, the dignity of all people, and the transformative power of language and compassion. Through her words and presence, she championed self-expression, justice, and humanity, leaving behind a legacy defined by grace, courage, and the belief that how we make others feel is the most lasting impact of all."
+        ],
+        "quotes": [
+            "We may encounter many defeats, but we must not be defeated.",
+            "If you don't like something, change it. If you can't change it, change your attitude.",
+            "Try to be a rainbow in someones cloud",
+            "There is no greater agony than bearing an untold story inside you.",
+            "It is one of the greatest gifts you can give yourself, to forgive. Forgive everybody.",
+            "One isn't necessarily born with courage, but one is born with potential. Without courage, we cannot practice any other virtue with consistency. We can't be kind, true, merciful, generous, or honest.",
+            "If you find it in yourself to care for somebody else, you will have succeeded.",
+            "If one is luckym a solitary fantasy can totally transform one million realities."
+        ]
+    },
+    {
+        "author": "Robert Frost",
+        "image": "https://www.robertfrost.org/assets/img/robert-frost.jpg",
+        "history": [
+            "<a href=\"https://en.wikipedia.org/wiki/Robert_Frost\">Robert Frost</a>(1874–1963) was a highly acclaimed American poet whose thoughtful, accessible verse explored rural life, human emotion, and the deeper meanings found in nature and everyday moments. Born in San Francisco and raised in New England, he became one of the most celebrated voices in American literature, winning four Pulitzer Prizes and gaining national honor, including reciting a poem at President Kennedy’s inauguration. Frost's poetry—known for its simple language and profound layers—captured the complexity of choice, isolation, and the beauty and indifference of the natural world. His work reflected a philosophy grounded in realism, emotional nuance, and the belief that poetry should delight, provoke thought, and illuminate truth."
+        ],
+        "quotes": [
+            "The best way out is always through.",
+            "Two roads diverged in a wood, and I--I took the one less traveled by, and that has made all the difference.",
+            "Freedom lies in being bold.",
+            "In three words I can sum up everything I've learned about life: it goes on."
+        ]
+    },
+    {
+        "author": "Rumi",
+        "image": "https://english.cdn.zeenews.com/sites/default/files/2024/11/21/1586708-fotojet-10.jpg",
+        "history": [
+            "<a href=\"https://en.wikipedia.org/wiki/Rumi\" target=\"blank\">Jalāl al-Dīn Rūmī</a> (1207–1273), known simply as Rumi, was a 13th-century Persian poet, mystic, and Sufi master whose writings have transcended time, language, and culture to become some of the most widely read spiritual poetry in the world. Born in present-day Afghanistan and later settled in Konya (modern-day Turkey), Rumi's teachings centered on love, unity, and the divine connection between all beings. After the loss of his beloved spiritual companion Shams of Tabriz, Rumi’s grief transformed into profound poetic inspiration, leading to masterpieces like the Masnavi, often called the \"Qur’an in Persian.\" His philosophy emphasized inner transformation, surrender to divine love, and the soul’s journey toward truth, often expressed through vivid metaphors, whirling dervishes, and ecstatic verse. Rumi believed that love was the essence of all life, and embodied the reflection of his enduring message of spiritual awakening and self-discovery."
+        ],
+        "quotes": [
+            "You were born with wings, why prefer to crawl through life?",
+            "Everything that is made beautiful and fair and lovely is made for the eye of one who sees.",
+            "Beauty surrounds us, but usually we need to be walking in a garden to know it.",
+            "Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.",
+            "Through love, all that is bitter will be sweet, through love all that is copper will be gold, through love all dregs will become wine, through love all pain will turn to medicine.",
+            "Grief can be the garden of compassion. If you keep your heart open through everything, your pain can become your greatest ally in your life's search for love and wisdom.",
+            "You know the value of every article of merchandise, but if you don't know the value of your own soul, it's all foolishness.",
+            "That which God said to the rose, and caused it to laugh in full-blown beauty, He said to my heart, and made it a hundred times more beautiful."
+        ]
+    },
+    {
+        "author": "Abraham Lincoln",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg/1200px-Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg",
+        "history": [
+            "<a href=\"https://en.wikipedia.org/wiki/Abraham_Lincoln\" target=\"blank\">Abraham Lincoln</a> (1809–1865) was the 16th president of the United States, best known for leading the nation through the Civil War, preserving the Union, and advancing the cause of freedom by issuing the Emancipation Proclamation, which paved the way to ending slavery. Born in a log cabin in Kentucky and largely self-educated, Lincoln rose from humble beginnings to become a lawyer, congressman, and one of America's most revered leaders. His presidency was marked by profound moral and political challenges, yet he remained guided by principles of justice, equality, and unity. Lincoln’s speeches, including the iconic Gettysburg Address, captured his deep belief in democracy and human dignity. He was assassinated in 1865, just days after the Civil War ended, but his legacy endures as a symbol of integrity, perseverance, and the idea that a nation “conceived in liberty” must be continually shaped by the people it serves."
+        ],
+        "quotes": [
+            "You cannot escape the responsibility of tomorrow by evading it today.",
+            "Character is like a tree and reputation like a shadow. The shadow is what we think of it; the tree is the real thing.",
+            "Always bear in mind that your own resolution to success is more important than any other.",
+            "Do I not destroy my enemies when I make them my friends.",
+            "I have found that mercy bears richer fruits than strict justice.",
+            ""
+        ]
+    },
+    {
+        "author": "Nelson Mandela",
+        "image": "https://cdn.britannica.com/93/173193-050-639D3239/Nelson-Mandela.jpg",
+        "history": [
+            "<a href=\"https://en.wikipedia.org/wiki/Nelson_Mandela\" target=\"blank\">Nelson Mandela</a> (1918–2013) was a South African anti-apartheid revolutionary, political leader, and the country’s first Black president, who became a global symbol of resistance, reconciliation, and human rights. Born in a rural village in the Eastern Cape, Mandela became a lawyer and a leading figure in the African National Congress (ANC), fighting against South Africa’s brutal system of racial segregation known as apartheid. He was imprisoned for 27 years for his activism, emerging not with bitterness but with a vision for unity. In 1994, he was elected president in the country’s first multiracial democratic election, leading efforts to heal a divided nation through truth, forgiveness, and equality. Mandela’s life embodied a philosophy of resilience, compassion, and justice, and he famously believed that “education is the most powerful weapon which you can use to change the world.” His legacy continues to inspire movements for freedom and peace around the globe."
+        ],
+        "quotes": [
+            "After climbing a hill, one only finds that there are many more hills to climb.",
+            "Do not judge me by my successes, judge me by how many times I fell down and got back up again.",
+            "I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.",
+            "Courageous people do not fear forgiving, for the sake of peace.",
+            "Education is the most powerful weapon which you can use to change the world.",
+            "A good head and a good heart are always a formidable combination.",
+            "To be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others."
+        ]
+    },
+    {
+        "author": "Denzel Washington",
+        "image": "https://aaregistry.org/wp-content/uploads/2009/09/denzel-washington.jpg",
+        "history": [
+            "<a href=\"https://en.wikipedia.org/wiki/Denzel_Washington\" target=\"blank\">Denzel Washington</a> (born 1954) is an acclaimed American actor, director, and producer, widely regarded as one of the most talented and respected performers of his generation. Born in Mount Vernon, New York, he rose to prominence with powerful roles in both film and theater, known for his commanding presence, emotional depth, and commitment to authenticity. Washington has earned multiple Academy Awards, Golden Globes, and a Tony Award, with standout performances in films like Glory, Training Day, Malcolm X, Fences, and The Hurricane. Beyond his artistry, he is known for his discipline, faith, and mentorship, often speaking about the importance of purpose, integrity, and hard work. A strong advocate for education and personal responsibility, Washington has used his platform to uplift others. His career and character reflect a lifelong dedication to excellence, growth, and giving back."
+        ],
+        "quotes": [
+            "Don't aspire to make a living, aspire to make a difference.",
+            "Without commitment, you'll never start, but more importantly, without consistency, you'll never finish.",
+            "You pray for rain, you goota deal with the mud too. That's a part of it.",
+            "My faith helps me understand that circumstances don't dictate my happiness, my inner peace.",
+            "Man gives you the award but God gives you the reward.",
+            "I'd rather stand with God and be condemned by the world, than to stand with the world and be condemned by God.",
+            "I say luck is when an opportunity comes along and you're prepared for it.",
+            "I blame no one. I look in the mirror.",
+            "Don't just apire to make a living, apsire to make a difference.",
+            "At the end of the day, it's not about what you have or even what you've accomplished. It's about what you've done with those accomplishments. It's about who you've lifted up, who you've made better. It's about you what you've given back."
+        ]
     }
 ]
