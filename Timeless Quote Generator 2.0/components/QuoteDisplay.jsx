@@ -1,28 +1,45 @@
-import React from 'react';
-import QuoteButton from './QuoteButton';
+import React, { useState } from "react";
+import QuoteButton from "./QuoteButton";
 
 const QuoteDisplay = ({ quoteData, onLike, onGenerate, showQuote }) => {
-  if (!quoteData) return null;
+  const [showAlert, setShowAlert] = useState(false);
 
+  if (!quoteData) return null;
   const { image, quote, author, history } = quoteData;
 
+  const handleLike = () => {
+    onLike(quoteData);
+    setShowAlert(true);
+
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+  };
+
   return (
-     <div className="container">
+    <div className="container">
       <QuoteButton onClick={onGenerate} />
 
+      {showAlert && (
+        <div className="alert-container">
+          <div className="alert alert-success" role="alert">
+            Quote saved successfully!
+          </div>
+        </div>
+      )}
+
       <div id="quote-image">
-        <img src={image} alt={author} className={showQuote ? 'animated' : ''} />
+        <img src={image} alt={author} className={showQuote ? "animated" : ""} />
       </div>
 
       {showQuote && (
         <div id="quote-container">
-          <p><strong>"{quote}"</strong></p>
+          <p>
+            <strong>"{quote}"</strong>
+          </p>
           <p>- {author}</p>
           <p dangerouslySetInnerHTML={{ __html: history }}></p>
-
-          <button className="like-button" onClick={() => {
-            onLike(quoteData);
-          }}>
+          <button onClick={handleLike} className="like-button">
             🖤
           </button>
         </div>

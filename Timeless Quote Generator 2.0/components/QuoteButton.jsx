@@ -1,6 +1,6 @@
 const QuoteButton = ({ onClick }) => (
   <div className="button-wrapper">
-    <button onClick={onClick}>Generate Quote</button>
+    <button className="btn btn-primary btn-md" onClick={onClick}>Generate Quote</button>
   </div>
 );
 

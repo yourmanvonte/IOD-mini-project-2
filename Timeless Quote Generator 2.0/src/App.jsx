@@ -60,6 +60,15 @@ const App = () => {
 
   const saveQuote = (quote) => {
     const savedQuotes = JSON.parse(localStorage.getItem("savedQuotes")) || [];
+    const isDuplicate = savedQuotes.some(
+      (q) => q.quote === quote.quote && q.author === quote.author
+    );
+
+    if (isDuplicate) {
+      console.log("Quote already saved.");
+      return;
+    }
+
     localStorage.setItem(
       "savedQuotes",
       JSON.stringify([...savedQuotes, quote])
@@ -82,12 +91,12 @@ const App = () => {
                       Saved Quotes
                     </Link>
                     <span>Welcome, {user}</span>
-                    <button onClick={handleLogout} className="logout-button">
+                    <button onClick={handleLogout} className="logout-button btn btn-primary btn-md">
                       Logout
                     </button>
                   </>
                 ) : (
-                  <Link to="/login" className="login-link">
+                  <Link to="/login" className="login-link btn btn-primary btn-md" >
                     Login
                   </Link>
                 )}
