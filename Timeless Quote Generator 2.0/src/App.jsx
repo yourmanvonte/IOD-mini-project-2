@@ -14,20 +14,6 @@ const getRandomQuote = () => {
   const randomAuthor =
     quotesData[Math.floor(Math.random() * quotesData.length)];
 
-  if (
-    !randomAuthor ||
-    !Array.isArray(randomAuthor.quotes) ||
-    randomAuthor.quotes.length === 0
-  ) {
-    console.warn("Invalid quote data:", randomAuthor);
-    return {
-      author: "Unknown",
-      image: "",
-      history: ["<p>No historical info available.</p>"],
-      quote: "No quote available.",
-    };
-  }
-
   const quoteArray = randomAuthor.quotes;
   const randomQuote = quoteArray[Math.floor(Math.random() * quoteArray.length)];
 
