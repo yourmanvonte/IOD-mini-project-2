@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const SavedQuotes = () => {
+const SavedQuotes = ({ user }) => {
+    if (!user) {
+      <p>Please <Link to="/login">log in</Link> to view saved quotes.</p>;
+    }
     const [savedQuotes, setSavedQuotes] = useState([]);
 
     useEffect(() => {

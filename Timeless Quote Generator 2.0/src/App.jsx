@@ -1,16 +1,24 @@
-import { useState, useEffect } from 'react';
-import './App.css';
-import Intro from '../components/Intro'
-import QuoteDisplay from '../components/QuoteDisplay';
-import quotesData from './data/quotes.json';
+import { useState, useEffect } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Login from "../components/Login";
+import SavedQuotes from "../components/SavedQuotes";
+import "./App.css";
+import Intro from "../components/Intro";
+import QuoteDisplay from "../components/QuoteDisplay";
+import quotesData from "./data/quotes.json";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const getRandomQuote = () => {
-  const randomAuthor = quotesData[Math.floor(Math.random() * quotesData.length)];
+  const randomAuthor =
+    quotesData[Math.floor(Math.random() * quotesData.length)];
 
-  if (!randomAuthor || !Array.isArray(randomAuthor.quotes) || randomAuthor.quotes.length === 0) {
+  if (
+    !randomAuthor ||
+    !Array.isArray(randomAuthor.quotes) ||
+    randomAuthor.quotes.length === 0
+  ) {
     console.warn("Invalid quote data:", randomAuthor);
     return {
       author: "Unknown",
@@ -32,6 +40,12 @@ const getRandomQuote = () => {
 };
 
 const App = () => {
+  const [user, setUser] = useState(localStorage.getItem("user") || "");
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setUser("");
+  };
+
   const [currentQuote, setCurrentQuote] = useState(null);
   const [showQuote, setShowQuote] = useState(false);
 
@@ -39,29 +53,78 @@ const App = () => {
     setCurrentQuote(getRandomQuote());
   }, []);
 
-  if (!currentQuote) return null;
-
   const generateNewQuote = () => {
     setCurrentQuote(getRandomQuote());
     setShowQuote(true);
   };
 
   const saveQuote = (quote) => {
-    const savedQuotes = JSON.parse(localStorage.getItem('savedQuotes')) || [];
-    localStorage.setItem('savedQuotes', JSON.stringify([...savedQuotes, quote]));
+    const savedQuotes = JSON.parse(localStorage.getItem("savedQuotes")) || [];
+    localStorage.setItem(
+      "savedQuotes",
+      JSON.stringify([...savedQuotes, quote])
+    );
   };
 
   return (
-      <div className="page-container">
-        <header>
-          <h1>Timeless Quote Generator</h1>
-          {!showQuote && <Intro />}
-        </header>
-        <main>
-          <QuoteDisplay quoteData={currentQuote} onLike={saveQuote} onGenerate={generateNewQuote} showQuote={showQuote}/>
-        </main>
-      </div>
-    )
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div className="page-container">
+            <header className="header">
+              <div className="header-left" />
+              <h1 className="title">Timeless Quote Generator</h1>
+              <div className="user-info">
+                {user ? (
+                  <>
+                    <Link to="/saved" className="saved-link">
+                      Saved Quotes
+                    </Link>
+                    <span>Welcome, {user}</span>
+                    <button onClick={handleLogout} className="logout-button">
+                      Logout
+                    </button>
+                  </>
+                ) : (
+                  <Link to="/login" className="login-link">
+                    Login
+                  </Link>
+                )}
+              </div>
+            </header>
+            <main>
+              {!showQuote && <Intro />}
+              {currentQuote && (
+                <QuoteDisplay
+                  quoteData={currentQuote}
+                  onLike={saveQuote}
+                  onGenerate={generateNewQuote}
+                  showQuote={showQuote}
+                />
+              )}
+            </main>
+          </div>
+        }
+      />
+      <Route path="/login" element={<Login setUser={setUser} />} />
+      <Route
+        path="/saved"
+        element={
+          user ? (
+            <SavedQuotes user={user} />
+          ) : (
+            <div className="page-container">
+              <h2>
+                Please <Link to="/login">log in</Link> to view saved quotes.
+              </h2>
+            </div>
+          )
+        }
+      />
+      <Route path="*" element={<p>Page Not Found</p>} />
+    </Routes>
+  );
 };
 
 export default App;
